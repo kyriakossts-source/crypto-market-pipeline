@@ -5,25 +5,25 @@ An end-to-end data pipeline built with Python, SQLite, and Streamlit that fetche
 ---
 
 ## 🏗️ Architecture Flow
-1. **Extract**: Ingests real-time crypto financial metrics directly from the CoinGecko REST API using `requests`[cite: 1].
-2. **Transform**: Cleans null values, formats data types, and appends ingestion timestamps using `pandas`[cite: 1].
-3. **Load**: Persists structured time-series data into an embedded `SQLite` database (`crypto_analytics.db`)[cite: 1].
-4. **Visualize**: Queries the database to render interactive KPI metrics and distribution charts using `Streamlit` & `Plotly`[cite: 1].
+1. **Extract**: Ingests real-time crypto financial metrics directly from the CoinGecko REST API using `requests`.
+2. **Transform**: Cleans null values, formats data types, and appends ingestion timestamps using `pandas`.
+3. **Load**: Persists structured time-series data into an embedded `SQLite` database (`crypto_analytics.db`).
+4. **Visualize**: Queries the database to render interactive KPI metrics and distribution charts using `Streamlit` & `Plotly`.
 
 ---
 
 ## 🛠️ Tech Stack
-* **Language**: Python[cite: 1]
-* **Database**: SQLite[cite: 1]
-* **Data Engineering / Ingestion**: Pandas, Requests[cite: 1]
-* **Web Dashboard & Visualization**: Streamlit, Plotly[cite: 1]
+* **Language**: Python
+* **Database**: SQLite
+* **Data Engineering / Ingestion**: Pandas, Requests
+* **Web Dashboard & Visualization**: Streamlit, Plotly
 
 ---
 
 ## ✨ Key Features
 * **Automated Data Pipeline**: Single-command ETL process to ingest and store market metrics.
 * **Persistent Historical Data**: Appends new ingestion cycles into SQLite to track crypto trends.
-* **Interactive UI**: Live metric cards (24h high, low, volume) and responsive Plotly visual charts[cite: 1].
+* **Interactive UI**: Live metric cards (24h high, low, volume) and responsive Plotly visual charts.
 
 ---
 
