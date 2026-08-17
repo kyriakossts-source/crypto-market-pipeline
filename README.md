@@ -47,7 +47,7 @@ python -m venv env
 ### 4. Activate the Environment
 * **Command Prompt (CMD):**
   ```cmd
-  env\Scripts\activate.bat
+  .\env\Scripts\activate.bat
   ```
 * **PowerShell:**
   ```powershell
