@@ -1,38 +1,77 @@
-# Automated Crypto Market ETL Pipeline & Dashboard
+# 📈 Automated Crypto Market ETL Pipeline & Dashboard
 
-An end-to-end data pipeline built with Python, SQLite, and Streamlit that fetches real-time market data, transforms it, and presents actionable insights on an interactive dashboard.
-
----
-
-##  Architecture Flow
-1. **Extract**: Ingests real-time cryptocurrency metrics from CoinGecko REST API using `requests`.
-2. **Transform**: Formats data types, cleans null values, and appends ingestion timestamps with `pandas`.
-3. **Load**: Persists structured data into an embedded `SQLite` database (`crypto_analytics.db`).
-4. **Visualize**: Renders interactive KPI cards and distribution charts via `Streamlit` & `Plotly`.
+An end-to-end data pipeline built with Python, SQLite, and Streamlit that fetches real-time cryptocurrency market data, cleans and transforms it, and presents actionable insights through an interactive web dashboard[cite: 1].
 
 ---
 
-## Tech Stack
-- **Language**: Python
-- **Database**: SQLite
-- **Data Engineering**: Pandas, Requests
-- **Visualization**: Streamlit, Plotly
+## 🏗️ Architecture Flow
+1. **Extract**: Ingests real-time crypto financial metrics directly from the CoinGecko REST API using `requests`[cite: 1].
+2. **Transform**: Cleans null values, formats data types, and appends ingestion timestamps using `pandas`[cite: 1].
+3. **Load**: Persists structured time-series data into an embedded `SQLite` database (`crypto_analytics.db`)[cite: 1].
+4. **Visualize**: Queries the database to render interactive KPI metrics and distribution charts using `Streamlit` & `Plotly`[cite: 1].
 
 ---
 
-##  How to Run Locally
+## 🛠️ Tech Stack
+* **Language**: Python[cite: 1]
+* **Database**: SQLite[cite: 1]
+* **Data Engineering / Ingestion**: Pandas, Requests[cite: 1]
+* **Web Dashboard & Visualization**: Streamlit, Plotly[cite: 1]
 
-1. **Clone the repository & install dependencies:**
-   \`\`\`bash
-   pip install -r requirements.txt
-   \`\`\`
+---
 
-2. **Run the ETL pipeline:**
-   \`\`\`bash
-   python etl.py
-   \`\`\`
+## ✨ Key Features
+* **Automated Data Pipeline**: Single-command ETL process to ingest and store market metrics.
+* **Persistent Historical Data**: Appends new ingestion cycles into SQLite to track crypto trends.
+* **Interactive UI**: Live metric cards (24h high, low, volume) and responsive Plotly visual charts[cite: 1].
 
-3. **Launch the Streamlit Dashboard:**
-   \`\`\`bash
-   python -m streamlit run app.py
-   \`\`\`
+---
+
+## 🚀 How to Run Locally (Windows CMD / PowerShell)
+
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/kyriakossts-source/crypto-market-pipeline.git](https://github.com/kyriakossts-source/crypto-market-pipeline.git)
+```[cite: 1]
+
+### 2. Navigate to the Directory
+```bash
+cd crypto-market-pipeline
+```[cite: 1]
+
+### 3. Create a Virtual Environment (Optional)
+```bash
+python -m venv env
+```[cite: 1]
+
+### 4. Activate the Environment
+* **Command Prompt (CMD):**
+  ```cmd
+  env\Scripts\activate.bat
+  ```[cite: 1]
+* **PowerShell:**
+  ```powershell
+  .\env\Scripts\Activate.ps1
+  ```[cite: 1]
+
+### 5. Install Dependencies
+```bash
+pip install -r requirements.txt
+```[cite: 1]
+
+### 6. Run the ETL Pipeline
+Fetches latest market data and updates `crypto_analytics.db`[cite: 1]:
+```bash
+python etl.py
+```[cite: 1]
+
+### 7. Launch the Dashboard
+```bash
+python -m streamlit run app.py
+```[cite: 1]
+
+### 8. Open in Browser
+Visit your local server at[cite: 1]:
+```text
+http://localhost:8501
+```[cite: 1]
