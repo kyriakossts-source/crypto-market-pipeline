@@ -31,7 +31,7 @@ An end-to-end data pipeline built with Python, SQLite, and Streamlit that fetche
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/kyriakossts-source/crypto-market-pipeline.git](https://github.com/kyriakossts-source/crypto-market-pipeline.git)
+git clone https://github.com/kyriakossts-source/crypto-market-pipeline.git
 ```
 
 ### 2. Navigate to the Directory
@@ -39,7 +39,7 @@ git clone [https://github.com/kyriakossts-source/crypto-market-pipeline.git](htt
 cd crypto-market-pipeline
 ```
 
-### 3. Create a Virtual Environment (Optional)
+### 3. Create a Virtual Environment 
 ```bash
 python -m venv env
 ```
@@ -60,7 +60,7 @@ pip install -r requirements.txt
 ```
 
 ### 6. Run the ETL Pipeline
-Fetches latest market data and updates `crypto_analytics.db`[cite: 1]:
+Fetches latest market data and updates `crypto_analytics.db`:
 ```bash
 python etl.py
 ```
@@ -70,7 +70,7 @@ python etl.py
 python -m streamlit run app.py
 ```
 ### 8. Open in Browser
-Visit your local server at[cite: 1]:
+Visit your local server at:
 ```text
 http://localhost:8501
 ```
